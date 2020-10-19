@@ -6,7 +6,7 @@ function ClientDetailPage(props) {
   return (
     <>
       <h1>Client Info</h1>
-      <ClientCard key={client._id} client={client} />
+      <ClientCard key={props.client._id} client={props.client} />
     </>
   );
 }

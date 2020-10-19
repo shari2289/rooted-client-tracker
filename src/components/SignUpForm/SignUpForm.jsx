@@ -23,7 +23,7 @@ class SignUpForm extends Component {
     e.preventDefault();
     try {
       await userService.signup(this.state);
-      this.props.handleSignUpOrLogin();
+      this.props.handleSignupOrLogin();
       this.props.history.push('/');
     } catch (err) {
       this.props.updateMessage(err.message);
@@ -37,7 +37,7 @@ class SignUpForm extends Component {
   render() {
     return (
 
-        <div id="SignUpPage">
+        <div id="SignupPage">
             <h2> Sign Up </h2>
             <form onSubmit={this.handleSubmit} >
                 <div>

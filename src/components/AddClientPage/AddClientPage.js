@@ -8,7 +8,7 @@ class AddClientPage extends Component {
         img: 'https://i.imgur.com/TNxPyMQ.png',
         nextAppointment: '',
         styleRequested: '',
-        Comments: ''
+        comments: ''
     },
   };
 
