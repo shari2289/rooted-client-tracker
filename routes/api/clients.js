@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const stylesCtrl = require('../../controllers/api/clients');
+const clientsCtrl = require('../../controllers/api/clients');
 
 
 router.get('/', clientsCtrl.index);
