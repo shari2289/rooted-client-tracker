@@ -54,6 +54,7 @@ class SignUpForm extends Component {
                 </div>
                 <div>
                     <button type="submit" className="button">SUBMIT</button>
+                    <Link to='/'>Cancel</Link>
                 </div >
             </form>
         </div>

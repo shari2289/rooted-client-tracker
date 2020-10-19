@@ -23,18 +23,10 @@ class App extends Component {
     };
   }
 
-  async seedMyState() {
-    const clients = await clientAPI.getAll();
-    this.setState({ clients });
-  }
-
   async componentDidMount() {
-    this.seedMyState()
-  }
-
-  async componentDidUpdate() {
-    this.seedMyState()
-  }
+    const clients = await clientAPI.getAll();
+    this.setState({ clients: clients });
+}
 
    /*--- Callback Methods ---*/
    handleLogout = () => {
