@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import userService from '../../utils/userService';
-import './SignupForm.css';
+import './SignUpForm.css';
 
-class SignupForm extends Component {
+class SignUpForm extends Component {
 
   state = {
     name: '',
@@ -23,7 +23,7 @@ class SignupForm extends Component {
     e.preventDefault();
     try {
       await userService.signup(this.state);
-      this.props.handleSignupOrLogin();
+      this.props.handleSignUpOrLogin();
       this.props.history.push('/');
     } catch (err) {
       this.props.updateMessage(err.message);
@@ -37,7 +37,7 @@ class SignupForm extends Component {
   render() {
     return (
 
-        <div id="SignupPage">
+        <div id="SignUpPage">
             <h2> Sign Up </h2>
             <form onSubmit={this.handleSubmit} >
                 <div>
@@ -62,4 +62,4 @@ class SignupForm extends Component {
 }
 }
 
-export default SignupForm;
+export default SignUpForm;

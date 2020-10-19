@@ -21,7 +21,6 @@ app.use('/api/users', require('./routes/api/users'));
 app.use(require('./config/auth'));
 
 app.use('/api/clients', require('./routes/api/clients'));
-app.use('/api/styles', require('./routes/api/styles'));
 
 
 // The following "catch all" route (note the *)is necessary

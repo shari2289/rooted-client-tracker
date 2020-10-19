@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+.NavBar {
+    display: relative;
+    top: 121px;
+    background-color: black;
+    padding:10px;
+    text-align: center;
+    color: rgb(12, 104, 12);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-bottom: 30px;
+}
+  
+  .NavBar-link {
+    background-color:black;
+    padding:0 20px;
+    color: rgb(12, 104, 12);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
