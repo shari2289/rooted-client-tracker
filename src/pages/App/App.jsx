@@ -35,11 +35,7 @@ class App extends Component {
   }
 
   handleSignupOrLogin = () => {
-    this.setState({
-      user: userService.getUser()
-    },
-      () => this.seedMyState()
-    )
+    this.setState({ user: userService.getUser() })
   }
 
 
